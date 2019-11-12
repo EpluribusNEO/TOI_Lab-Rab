@@ -1,0 +1,23 @@
+
+.divStyleB{
+    width: 65%;
+    min-width: 600px;
+    border: 6px dotted #5050dd;
+    border-radius: 6px;
+    padding: 8px 8px;
+    margin: 10px auto;
+}
+
+.divStyleC{
+    font-size: 14pt;
+    border: 2px solid #505050;
+}
+
+.headerStyleA{
+    text-align: center;
+}
+
+input{
+    margin-top: 8px;
+    font-size: 14pt;
+}

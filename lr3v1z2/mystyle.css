@@ -1,0 +1,49 @@
+div{ margin: 6px;}
+
+.divStyle{
+    width: 65%;
+    min-width: 600px;
+    border: 6px solid #60aa80;
+    border-radius: 10px;
+    padding: 8px 8px;
+    margin: 10px auto;
+}
+
+.divStyleD{
+    font-size: 14pt;
+    border: 4px dotted #cc6677;
+}
+
+.divStyleC{
+    font-size: 14pt;
+    border: 4px dotted #7766cc;
+	padding: 6px;
+}
+
+.headerStyle{
+    text-align: center;
+}
+
+.styleSpan{
+    font-size: 18pt;
+    margin-bottom: 18px;
+    margin-top: 6px;
+}
+
+#currentDate{
+    font-size: 18pt;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    padding-top: 10px;
+    height: 56px;
+    border: 2px solid #ff0000;
+    
+}
+
+#countDays{
+    font-size: 14pt;
+}
+
+input{
+	font-size: 14pt;
+}

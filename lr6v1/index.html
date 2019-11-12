@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mystyle.css"/>
+    <script type="text/javascript" src="lr6_script.js"></script>
+    <title>IB_76s_Pirogov_DS</title>
+</head>
+<body>
+    <div class="divStyle">
+            <h2 class="headerStyle">Лабораторная Работа №6</h2>
+            <h3 class="headerStyle">Вариант 1</h3>
+            <h3 class="headerStyle">Пирогов Денис  ИБ-76с</h3>
+    </div>
+    
+    <div class="divStyle">
+    	<h1 class="headerStyle">Задание 1</h1>
+    	<h2 class="headerStyle">Автомобили в продаже:</h2>
+    	<table>
+    		<tr>
+    		<!--this.options[this.selectedIndex].id -->
+    			<td><img onMouseOver="pixOver(alt);" onMouseOut="pixOut();" src="pix/mazda-rx7.jpg" alt="mazda-rx7"></td>
+    			<td><img onMouseOver="pixOver(alt);" onMouseOut="pixOut();" src="pix/skyline-r34.jpg" alt="skyline-r34"></td>
+    		</tr>
+    		<tr>
+    			<td><img onMouseOver="pixOver(alt);" onMouseOut="pixOut();" src="pix/mitsubishi-eclipse.jpg" alt="mitsubishi-eclipse"></td>
+    			<td><img onMouseOver="pixOver(alt);" onMouseOut="pixOut();" src="pix/honda-2000.jpg" alt="honda-2000"></td>
+    		</tr>
+    		
+    		<tr>
+    			<td colspan=2>
+    				<input id="aboutCar" type="text" size="60" style="font-size: 18pt;">
+    			</td>
+    		</tr>
+    	</table>
+    </div>
+    
+    <div class="divStyle">
+ 		<h1 class="headerStyle">Задание 2</h1>
+    	<h2 class="headerStyle">Слайд_Шоу</h2>
+ 				
+		<table>
+			<tr>
+				<td><input class="btnSlider" type="button" value="<" onclick="previous();" /></td>
+				<td><img src="pix/noimg.jpg" alt="Картинка" id="pics"><br></td>
+				<td><input class="btnSlider" type="button" value=">" onclick="next();"/>	</td>
+			</tr>
+		</table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+span{font-size: 16pt;}
+
+.divStyleA{
+  font-size: 16pt; 
+  border:2px solid #505050;
+  padding: 8px 8px;
+  margin: 3px auto;
+  width: 65%;
+    min-width: 600px;
+  border-radius: 8px;
+}
+
+input{font-size: 14pt;}
+
+.headerStyleA{
+  text-align: center;
+}
+
+/* zadanie 3 */
+table { border: 2px dotted #000000;}
+
+td{
+    width: 25px;
+    height: 25px;
+}
+
+.td_time{
+	width: auto;
+    height: auto;
+}
+
+.r1{ background-color: #ffbb00; }
+.r2{ background-color: #4455ff; }
+.r3{ background-color: #ff00aa; }
+.wrapperDiv{ overflow: hidden }
+
+.firstDiv{
+    float:left;
+    margin-right: 10px;
+    
+}
+.secondDiv{
+    overflow: hidden;
+    margin-left: 10px;
+    
+}
+/* /zadanie 3 */

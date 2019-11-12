@@ -1,0 +1,32 @@
+.divStyle{
+    width: 65%;
+    min-width: 600px;
+    border: 6px solid #60aa80;
+    border-radius: 10px;
+    padding: 8px 8px;
+    margin: 10px auto;
+}
+
+.divStyleD{
+    font-size: 14pt;
+    border: 4px dotted #cc6677;
+}
+
+.headerStyle{
+    text-align: center;
+}
+
+.styleSpan{
+    font-size: 18pt;
+    margin-bottom: 18px;
+    margin-top: 6px;
+}
+
+#currentDate{
+    font-size: 18pt;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    border: 2px solid #ff0000;
+    
+}
+

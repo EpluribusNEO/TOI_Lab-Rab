@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mystyle.css"/>
+    <script type="text/javascript" src="myscript.js"></script>
+    <title>IB_76s_Pirogov_DS</title>
+</head>
+<body>
+    <div class="divStyleA">
+        <h3 class="headerStyleA">Лабораторная Работа №1</h3>
+        <h3 class="headerStyleA">Вариант 1</h3>
+        <h3 class="headerStyleA">Пирогов Денис  ИБ-76с</h3>
+    </div>
+    <div class="divStyleA">
+            <span>Задние 1.</span>
+            <p>
+                Введите свою фамилию, имя и отчество.<br>
+                Запросите подтверждение.<br>
+                Если все верно, то вывести приветствие, если нет, вывести сообщение об ошибке.
+            </p>
+        <input type="button" value="Решение (задание 1)" onclick="first();"/> 
+    </div>
+    
+    <div class="divStyleA">
+            <span>Задние 2.</span>
+            <p>
+                Введите время в часах и минутах.<br>
+                Определите время, которое будет через минуту.<br>
+                Используйте вложенные операторы IF.
+            </p>
+            
+            Задать время <input id="hour" type="text" size="2" style="font-size: 12pt;"> : <input id="min" type="text" size="2" style="font-size: 12pt;">
+        <input type="button" value="Решение (задание 2)" onclick="second();"/><br><hr>
+        <table>
+			<tr> 
+				 <td class="td_time">Заданное время</td>
+				 <td class="td_time"><input id="you" type="text" size="5" style="font-size: 12pt;"></td>
+			 </tr>
+        	 <tr>
+				<td class="td_time">Через минуту будет</td>
+				<td class="td_time"><input id="afterMin" type="text" size="5" style="font-size: 12pt;"></td> 
+        	</tr>
+        </table>
+    </div>
+    
+    <div class="divStyleA">
+        <span>Задние 3.</span>
+        <div class="wrapperDiv">
+          <div class="firstDiv">
+                <script type="text/javascript">
+                   let n=10;
+                    let s;
+                    document.write("<table>");
+                    for(i=1; i<=n; i++){
+                        document.write("<tr>");
+                        for(j=1; j<=n; j++){
+                           st = (j/i);
+                           if(st<=1)
+                               s = "class='r1'";
+                            else
+                                s = "class='r2'";
+                            document.write("<td " + s + "> </td>");
+                        }
+                        document.write("</tr>");
+                    }
+                    document.write("</table>");
+                </script>
+            </div>
+
+            <div calss="secondDiv">
+                <script type="text/javascript">
+                    let x=10;
+                    let cls;
+                    document.write("<table>");
+                    for(i=1; i<=x; i++){
+                        document.write("<tr>");
+                        for(j=1; j<=x; j++){
+                           st = (j+i)%3;
+                           if(st == 0)
+                               cls = "class='r3'";
+                            else
+                                cls = "class='r2'";
+                            document.write("<td " + cls + "> </td>");
+                        }
+                        document.write("</tr>");
+                    }
+                    document.write("</table>");
+                </script>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

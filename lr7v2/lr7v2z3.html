@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <style>
+		#fly{
+			position:absolute;
+			left:0px;
+			top:0px;
+			width: 72px;
+			height: auto;
+		}
+		#fon{
+			width: 50%; 
+			height: auto;
+		}
+	</style>
+    <title>IB_76s_Pirogov_DS</title>
+</head>
+<body>
+	<img src="pix/bg/forest_a.jpg" id="fon" />
+	<img src="pix/fly.png" id="fly">
+	
+	<script type="text/javascript">
+		let xBool = false;
+		let yBool = true;
+		let step = 10;
+		let x = 0;
+		let y = 0;
+		let fon=document.getElementById('fon');
+		let fly=document.getElementById('fly');
+		let x1=fon.width;
+		let x2=fly.width;
+		let y1=fon.height;
+		let y2=fly.height;
+		
+		
+		function movement(){
+
+		fly.style.top = (y.toString() + 'px');
+		fly.style.left = (x.toString() + 'px');
+
+			if(yBool)
+				y += step;
+			if(yBool == false)
+				y = y-step;
+			
+			if(xBool)
+				x += step;
+
+			
+			
+			if(y >= y1-y2){
+				yBool = null;
+				xBool = true;
+			}
+			if(x >= (x1/2)-x2){
+				xBool = false;
+				yBool = false;
+			}
+			
+			if(y<=0){
+				yBool = null;
+				xBool = true;
+			}
+			if(x>= x1-x2){
+				xBool = false;
+				yBool = true;
+			}
+			
+			console.log("x: "+x);
+			console.log("y: "+y);
+			
+			if((y<y1-y2) || (x<x1-x2))
+				setTimeout(movement, 50);
+			
+
+		}
+	
+		movement();
+	</script>
+</body>
+</html>
